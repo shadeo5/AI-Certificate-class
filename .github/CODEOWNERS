@@ -1,0 +1,7 @@
+# CODEOWNERS
+# Each line maps a file pattern to the owner(s) who must review PRs touching it.
+# The last matching pattern takes precedence.
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repo
+*       @shadeo5
