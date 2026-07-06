@@ -1,7 +1,19 @@
 # CODEOWNERS
-# Each line maps a file pattern to the owner(s) who must review PRs touching it.
-# The last matching pattern takes precedence.
+# Maps file patterns to the owner(s) whose review is REQUIRED on PRs that
+# touch them (when "Require review from Code Owners" is enabled in the ruleset).
+# The LAST matching pattern wins.
 # Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
-# Default owner for everything in the repo
-*       @shadeo5
+# ---- Default owner for everything in the repo ----
+*                       @shadeo5
+
+# ---- Medium tier (informational owner; base 1-review still applies) ----
+/src/                   @shadeo5
+
+# ---- High tier: the repo's crown-jewel paths ----
+# Changes here can alter infrastructure or the governance gates themselves,
+# so they REQUIRE code-owner (your) approval specifically.
+/infra/                 @shadeo5
+/.github/               @shadeo5
+/.github/workflows/     @shadeo5
+/.github/CODEOWNERS      @shadeo5
